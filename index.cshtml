@@ -1,0 +1,228 @@
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- begin::Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Layout
+    </title>
+    <meta name="description" content="Latest updates and statistic charts">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link href="@Url.Content("../assets/jplayer/jplayer.blue.monday.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("../assets/jplayer/modal.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("../assets/jplayer/jquery.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("../assets/jplayer/jquery.jplayer.min.js")"></script>    
+    <script type="text/javascript" src="@Url.Content("../assets/jplayer/onload.js")"></script>
+
+    <!--end::Web font -->
+    <!--begin::Base Styles -->
+    <!--begin::Page Vendors -->
+    @*<link href="@Url.Content("../assets/vendors/custom/fullcalendar/fullcalendar.bundle.css")" rel="stylesheet" type="text/css" />*@
+    <!--end::Page Vendors -->
+    @*<link href="@Url.Content("../assets/vendors/base/vendors.bundle.css")" rel="stylesheet" type="text/css" />*@
+    @*<link href="@Url.Content("../assets/demo/demo5/base/style.bundle.css")" rel="stylesheet" type="text/css" />*@
+    <!--end::Base Styles -->
+    <link rel="shortcut icon" href="../assets/demo/demo5/media/img/logo/favicon.ico" />
+
+</head>
+<!-- end::Head -->
+<!-- end::Body -->
+<body class="m-page--fluid m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default">
+
+    <!-- begin:: Page -->
+    <div class="m-grid m-grid--hor m-grid--root m-page">
+
+        @*<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+        <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+            <div class="jp-type-single">
+                <div class="jp-gui jp-interface">
+                    <div class="jp-controls">
+                        <button class="jp-play" role="button" tabindex="0">play</button>
+                        <button class="jp-stop" role="button" tabindex="0">stop</button>
+                    </div>
+                    <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                            <div class="jp-play-bar"></div>
+                        </div>
+                    </div>
+                    <div class="jp-volume-controls">
+                        <button class="jp-mute" role="button" tabindex="0">mute</button>
+                        <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                        <div class="jp-volume-bar">
+                            <div class="jp-volume-bar-value"></div>
+                        </div>
+                    </div>
+                    <div class="jp-time-holder">
+                        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                        <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                        <div class="jp-toggles">
+                            <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="jp-details">
+                    <div class="jp-title" aria-label="title">&nbsp;</div>
+                </div>
+                <div class="jp-no-solution">
+                    <span>Update Required</span>
+                    To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                </div>
+            </div>
+        </div>*@
+
+    </div>
+
+    <!-- end:: Page -->
+
+    <h2>Animated Modal with Header and Footer</h2>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+                    <div class="jp-type-single">
+                        <div class="jp-gui jp-interface">
+                            <div class="jp-controls">
+                                <button class="jp-play" role="button" tabindex="0">play</button>
+                                <button class="jp-stop" role="button" tabindex="0">stop</button>
+                            </div>
+                            <div class="jp-progress">
+                                <div class="jp-seek-bar">
+                                    <div class="jp-play-bar"></div>
+                                </div>
+                            </div>
+                            <div class="jp-volume-controls">
+                                <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                                <div class="jp-volume-bar">
+                                    <div class="jp-volume-bar-value"></div>
+                                </div>
+                            </div>
+                            <div class="jp-time-holder">
+                                <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                                <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                                <div class="jp-toggles">
+                                    <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jp-details">
+                            <div class="jp-title" aria-label="title">&nbsp;</div>
+                        </div>
+                        <div class="jp-no-solution">
+                            <span>Update Required</span>
+                            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--begin::Base Scripts -->
+    @*<script src="@Url.Content("../assets/vendors/base/vendors.bundle.js")" type="text/javascript"></script>*@
+    @*<script src="@Url.Content("../assets/demo/demo5/base/scripts.bundle.js")" type="text/javascript"></script>*@
+    <!--end::Base Scripts -->
+
+    <!--begin::Page Vendors -->
+@*    <script src="@Url.Content("../assets/vendors/custom/fullcalendar/fullcalendar.bundle.js")" type="text/javascript"></script>*@
+    <!--end::Page Vendors -->
+
+    <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+        <button type="button" class="btn btn-outline-success">
+            Left
+        </button>
+        <button type="button" class="btn btn-outline-success">
+            Middle
+        </button>
+        <button type="button" class="btn btn-outline-success">
+            Right
+        </button>
+    </div>
+    <div class="m--space-10"></div>
+    <div class="btn-group" role="group" aria-label="Default button group">
+        <button type="button" class="btn btn-outline-warning">
+            Left
+        </button>
+        <button type="button" class="btn btn-outline-warning">
+            Middle
+        </button>
+        <button type="button" class="btn btn-outline-warning">
+            Right
+        </button>
+    </div>
+    <div class="m--space-10"></div>
+    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+        <button type="button" class="btn btn-outline-info">
+            Left
+        </button>
+        <button type="button" class="btn btn-outline-info">
+            Middle
+        </button>
+        <button type="button" class="btn btn-outline-info">
+            Right
+        </button>
+    </div>
+
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+<!-- end::Body -->
+</html>
